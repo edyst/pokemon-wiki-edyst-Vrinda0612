@@ -1,0 +1,900 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Avenir-Next,Roboto,sans-serif;
+    font-size: 16px;
+}
+
+/*Navbar css*/
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.flag{
+   width: 30px;
+}
+
+.edyst{
+    height: 50px;
+    width: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+ }
+
+.navlink{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navlink ul{
+   list-style: none;
+   display:flex;
+   flex-direction: row;
+   gap: 2rem;
+   align-items: center;
+}
+
+.apply{
+  background-color: orange;
+  border: none;
+  color: #fff;
+  text-align: center;
+  padding: 5px 40px;
+  height: 40px;
+  width: 170px;
+}
+
+@media (max-width: 768px){
+    nav{
+        padding: 10px;
+        display:flex;
+        flex-direction: column;
+    }
+    nav .navlink{
+        gap: 0.2rem;
+    }
+    nav .apply{
+       width: 100%;
+     }
+}
+
+
+/*Home page css*/
+.container1{
+    background: url("https://i.imgur.com/ksqOx5F.jpg");
+    background-size: cover;
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.7);
+    padding-bottom: 170px;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.overlay{
+    background: #000000b3;
+}
+
+.container1 h1{
+    font-size: 100px; 
+    color: #fff;
+    margin-left: 50px;
+    margin-right: 60px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+.container1 h3{
+    color: #fff;
+    margin-left: 50px;
+    font-size: 55px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.apply_button{
+    background-color: #4992ca;
+    color: #fff;
+    border: none;
+    height: 70px;
+    width: 300px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.schedule{
+    background-color: #0000;;
+    height: 80px;
+    width: 300px;
+    margin-bottom: 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+}
+
+.learnmore{
+    border-radius: 15px;
+    outline: none;
+    margin-bottom: 20px;
+    height: 80px;
+    width: 570px;
+    font-size: 20px;
+    padding: 10px 0px 20px 0px;
+}
+
+button{
+    display: block;
+    padding: 20px 0px 20px 0px;
+    margin-left: 50px;
+}
+
+@media (max-width:768px)
+{
+    .container1 h1{
+        font-size:30px;
+    }
+    .container1 h3{
+       font-size:15px;
+   }
+    .container1{
+        padding:10px;
+   }
+   .container1 button{
+        padding: 10px;
+   }
+}
+
+/*Pocket Monsters Section css*/
+.container2{
+    background-color: #4992ca;
+    color: #fff;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.container2 h2{
+    font-size: 45px;
+    margin-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container2 h4{
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.para{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.cont2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.cont2 div{
+    padding: 10px;
+}
+
+.cont2 p{
+    padding-bottom: 100px;
+}
+
+p{
+    word-spacing: 0.1em;
+    line-height: 150%;
+}
+
+@media (max-width:768px)
+{
+    .container2{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container2 .cont2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 10px;
+    }
+    .container2 h2{
+        font-size: 15px;
+    }
+    .container2 h4{
+        font-size: 10px;
+    }
+}
+
+/*Statistics section css*/
+.container3{
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.statistics{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.container3 h2{
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.container3 h4{
+    font-size: 30px;
+}
+
+@media (max-width:768px)
+{
+    .container3{
+        margin: 10px;
+    }
+    .container3 h2{
+        font-size:15px;
+    }
+    .container3 .statistics{
+        display:flex;
+        flex-direction: column;
+    }
+    .container3 h4{
+        font-size:12px;
+    }
+}
+
+/*Pokemon of the year section css*/
+.container4{
+	padding: 100px 400px 100px 400px;
+	background-color: white;
+    text-align: center;
+    font-weight: 100;
+}
+
+.container4 h4{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.container4 h6{
+    font-size: 18px;
+}
+
+.pok{
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	flex-shrink: 1;
+}
+
+.pokemon_logo{
+	height: 80px;
+	width: 170px;
+}
+
+.cont4{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    color: #8a8a8a;
+}
+
+@media (max-width:768px)
+{
+    .container4{
+        padding: 10px;
+    }
+    .container4 h2{
+        font-size:15px;
+    }
+    .container4 h4{
+        font-size:12px;
+        padding:40px;
+    }
+    .container4 h6{
+        font-size:10px;
+    }
+    .container4 .cont4{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*Q and A section css*/
+.container5{
+    background-color: #4992ca;
+    color: #fff;
+    padding: 50px 100px 30px 200px;
+    font-size: 20px;
+    word-spacing: 0.1em;
+    line-height: 150%;
+}
+
+.container5 h2{
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.container5 ul{
+    padding: 10px 300px 10px 200px;
+}
+
+.container5 p{
+    padding-bottom: 30px;
+}
+
+@media (max-width:768px)
+{
+    .container5{
+        padding:10px;
+        font-size: 12px;
+    }
+    .container5 ul{
+        padding: 10px;
+    }
+    .container5 h2{
+        font-size: 15px;
+    }
+}
+
+/*Pokemon battles section css*/
+.container6{
+    padding: 50px 250px 50px 250px;
+    font-size: 20px;
+}
+
+.container6 h2{
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th {
+	border: 1px #8a8a8a solid;
+	padding: 10px;
+}
+
+td {
+	color: #8a8a8a;
+    padding: 15px;
+}
+
+.tickets{
+    color:  #4992ca;
+    padding-bottom: 10px;
+    padding-top: 70px;
+}
+
+.buy{
+    background-color: #4992ca;
+    border: none;
+    color: #fff;
+    text-align: center;
+    padding:  5px 40px;
+    height: 40px;
+    width: 240px;
+}
+
+.cont6{
+    display: flex;
+    flex-direction: row;
+	align-items: center;
+}
+
+.cont61{
+    flex-shrink: 2;
+    flex-basis: 25%;
+}
+
+.cont62{
+    flex-shrink: 1;
+    flex-basis: 65%;
+    padding-left: 10px;
+}
+
+.p6{
+    color:#8a8a8a;
+}
+
+.cont62 p{
+    padding-top: 10px;
+}
+
+@media (max-width:768px)
+{
+    .container6{
+        padding:10px;
+    }
+    .container6 .cont6{
+        display: flex;
+        flex-direction: column;
+    }
+    .container6 h2{
+        font-size: 15px;
+    }
+}
+/*Know more about Pokemon Section*/
+.container7{
+    background-color: #424242;
+    padding: 80px 400px 80px 400px;
+}
+
+.container7 h2{
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+    font-size: 45px;
+}
+
+.btn7{
+    background: #0000;
+	border: 2px solid #fff;
+	color: white;
+	padding: 10px;
+	width: 200px;
+}
+
+@media (max-width:768px)
+   {
+       .container7{
+           padding:10px;
+       }
+       .container7 h2{
+           font-size: 15px;
+       }
+}
+
+/*Pokemon card  css*/
+.container8{
+    padding: 40px 400px 40px 400px;
+}
+
+.container8 h2{
+    color:#8a8a8a; 
+    margin-bottom: 0;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+
+.cont8{
+    background-color: white;
+	width: 20%;
+	padding: 0;
+	padding-bottom: 20px;
+	border: 2px #F0F0F0 solid;
+}
+
+.cont81{
+    background-color: #F0F0F0;
+	border-top: 20px #4992ca solid;
+}
+
+.p8{
+    color:#8a8a8a;
+}
+
+.container8 p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width:768px)
+{
+    .container8{
+        padding:10px;
+    }
+
+    .container8 h2{
+        font-size: 15px;
+    }
+    .container8 .cont8{
+        width: 40%;
+    }
+}
+
+
+/*Pokemon trainers section css*/
+.container9{
+    background-color: #4992ca;
+    color: #fff;
+    text-align: center;
+    padding: 50px 350px 50px 350px;
+}
+
+.container9 h4{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-weight: 100px;
+}
+
+.container9 h6{
+    font-size: 18px;
+    font-weight: 100px;
+}
+
+.cont9{
+   display: flex;
+   flex-direction: row;
+}
+
+.cont91{
+    margin-left: 60px;
+}
+
+.cont92{
+    margin-left: 60px;
+}
+
+.cont93{
+    margin-left: 60px;
+}
+
+.pokemon_logo{
+    height: 80px;
+	width: 170px;
+}
+
+.pok{
+    border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	flex-shrink: 1;
+}
+
+@media (max-width:768px)
+{
+    .container9{
+        padding: 10px;
+    }
+    .container9 h2{
+        font-size: 15px;
+    }
+    .container9 h4{
+        font-size:12px;
+        padding: 10px;
+    }
+    .container9 h6{
+        font-size: 10px;
+    }
+    .container9 .cont9{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*Cards section css*/
+.container10{
+    padding: 50px 400px 50px 400px;
+}
+
+.container10 h2{
+    color: #8A8A8A;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100px;
+    padding-bottom: 10px;
+}
+
+.cards_container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  
+  .card {
+    width: 478px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin: 8px;
+    line-height: 24px;
+  }
+  
+  .card-sub-heading {
+    font-weight: 700;
+    height: 45px;
+    color: #3c3333;
+    text-align: left;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding-left: 10px;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .card-header {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); 
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 16px solid #4992ca; 
+    padding-top: 10px;
+  }
+  
+  .card-text{
+      padding: 30px 30px 20px 10px;
+  }
+
+  @media (max-width:768px)
+{
+    .container10{
+        padding:10px;
+    }
+    .container10 h2{
+        font-size: 15px;
+    }
+    .container10 h3{
+        font-size: 12px;
+    }
+}
+
+/*Input section css*/
+.container11{
+    background-color: #424242;
+    padding: 80px 400px 80px 400px;
+
+}
+
+.container11 h2{
+    text-align: center;
+    color:#fff;
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+.button{
+	background: #0000;
+	border: 1px white solid;
+	color: white;
+	padding: 10px;
+	width: 200px;
+}
+
+input[type="email"] {
+	padding: 10px;
+	width: 300px;
+
+}
+
+@media (max-width:768px)
+{
+    .container11{
+        padding:10px;
+    }
+    .container11 h2{
+        font-size: 15px;
+    }
+}
+
+/*Pokemon games section*/
+.container12{
+    padding: 40px 400px 40px 400px;
+}
+
+.container12 h2{
+   text-align: center;
+   color: #8A8A8A;
+   padding-bottom: 30px;
+   font-size: 40px;
+}
+
+.container12 h4{
+    color: black;
+    text-align: center;
+}
+
+.container12 i{
+    color: black;
+}
+
+.cont12{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+.img12{
+	width: 150px;
+	height: 200px;
+}
+
+.btn12{
+    background-color: #4992ca;
+    border: none;
+    color: #fff;
+    text-align: center;
+    padding:  5px 40px;
+    height: 40px;
+    width: 240px;
+}
+
+@media (max-width:768px)
+{    
+    .container12{
+    padding: 10px;
+    }
+
+    .container12 .cont12{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .container12 h2{
+        font-size: 12px;
+    }
+}
+
+/*Designers section css*/
+.container13{
+    background-color: #4992ca;
+	padding: 50px;
+	margin: 0;
+}
+
+.container13 h2{
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+}
+
+.cont13{
+    display: flex;
+    padding: 50px 300px 40px 300px;
+    color: #fff;
+    gap: 25px;
+}
+
+.img13{
+    border-radius: 50%;
+	height: 150px;
+	width: 150px;
+}
+
+
+@media (max-width:768px)
+{
+    .container13 .cont13{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .container13 h2 h4{
+        font-size: 12px;
+    }
+}
+
+/*Logos section css*/
+.container14 h2{
+    text-align: center;
+    color: #8A8A8A;
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.cont14{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding: 10px 350px 20px 350px;
+}
+
+@media (max-width:768px)
+{
+    .container14 .cont14{
+        display: flex;
+	    flex-direction: column;
+        padding: 10px;
+    }
+    .container14 h2{
+        font-size: 15px;
+    }
+}
+
+/*Know more section css*/
+.container15{
+    background-color: #4992ca;
+    color: #fff;
+    text-align: center;
+    padding: 50px 350px 50px 350px;
+}
+.container15 h2{
+    text-align: center;
+   color: white;
+   padding-bottom: 30px;
+   font-size: 40px;
+}
+
+.btn15{
+    background: #0000;
+	border: 2px solid #fff;;
+	color: #fff;
+	padding: 10px;
+	width: 200px;
+}
+
+@media (max-width:768px)
+{
+    .container15{
+        padding: 10px;
+    }
+    .container15 h2{
+        font-size: 15px;
+    }
+}
+
+
+/*Footer css*/
+footer {
+	background: #040127;
+	color: white;
+	display: flex;
+    flex-direction: row;
+    padding: 50px 200px 50px 200px;
+}
+
+footer div h6{
+    color: #8A8A8A;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+footer ul{
+        list-style: none;
+}
+
+footer li{
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.footer1 {
+	display: flex;
+	align-items: center;
+    width: 100%; 
+    height: 100%; 
+    justify-content: space-between;
+}
+
+@media (max-width:768px)
+{
+    footer{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer h6{
+        font-size: 15px;
+    }
+    footer .footer1{
+        display:flex;
+        flex-direction: column;
+    }
+}
